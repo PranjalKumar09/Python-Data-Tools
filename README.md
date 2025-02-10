@@ -1,11 +1,9 @@
 # Python Data Tools  
 
-![Python Data Tools](static/image.png)  
-
 A collection of Python scripts for automation, data processing, and utility tasks. This repository includes tools for file handling, encryption, API integration, media conversion, and more. Additionally, it contains Docker and Kubernetes deployment configurations. 
 
 
-[Tools Demo](static/image2.png)
+![Tools Demo](static/image2.png)
 
 
 ## 📌 Features  
