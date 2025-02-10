@@ -1,0 +1,16 @@
+ascii_magic
+instabot
+numpy
+pafy
+pikepdf
+Pillow
+plyer
+PyAutoGUI
+PyPDF2
+python3_xlib
+pytube
+pywhatkit
+qrcode
+Requests
+Xlib
+yt_dlp

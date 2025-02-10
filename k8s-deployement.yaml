@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: python-automation-tools
+spec:
+  replicas: 1  # Number of replicas you want to run, you can increase this for scaling.
+  selector:
+    matchLabels:
+      app: python-automation-tools
+  template:
+    metadata:
+      labels:
+        app: python-automation-tools
+    spec:
+      containers:
+        - name: python-automation-tools
+          image: pranjalkumar09/python-automation-tools:latest  # Docker image
+          ports:
+            - containerPort: 8080  # Replace with the port you want to expose
+          command: ["python", "src/QR_Generator2.py"]  # Sample file to run
+          volumeMounts:
+            - name: src-volume
+              mountPath: /app/src  # Mount the source code folder inside the container
+      volumes:
+        - name: src-volume
+          hostPath:
+            path: /path/to/your/local/src  # Update this path to the location of the src folder on the node
+            type: Directory
